@@ -1,7 +1,7 @@
 {
-  "name": "vuejs-reactivity",
+  "name": "vue3-reactivity",
   "version": "1.0.0",
-  "description": "Examples from Vue Mastery ''Vue 3 Reactivity' course.",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
