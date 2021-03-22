@@ -18,7 +18,7 @@ const targetMap = new WeakMap();
 
 let activeEffect = null;
 
-function effect(eff) {
+export function effect(eff) {
   activeEffect = eff;
   activeEffect();
   activeEffect = null;
@@ -44,7 +44,7 @@ function trigger(target, key) {
     return;
   }
   let dep = depsMap.get(key);
-  if (!dep) {
+  if (dep) {
     dep.forEach((effect) => {
       effect();
     });
